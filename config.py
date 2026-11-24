@@ -24,8 +24,8 @@ class Config:
 
     # Server settings
     HOST = os.getenv("FLASK_HOST", "0.0.0.0")
-    PORT = int(os.getenv("FLASK_PORT", 5000))
-    DEBUG = os.getenv("FLASK_DEBUG", "True").lower() in ("true", "1", "yes")
+    PORT = int(os.getenv("PORT", os.getenv("FLASK_PORT", 5000)))
+    DEBUG = os.getenv("FLASK_DEBUG", "False").lower() in ("true", "1", "yes")
 
     # Security & Upload settings
     MAX_CONTENT_LENGTH = 10 * 1024 * 1024  # 10 MB maximum upload size
