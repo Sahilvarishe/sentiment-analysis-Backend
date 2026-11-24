@@ -1,0 +1,27 @@
+# ==============================================================================
+# Requirements for Mental Health Detection and Song Recommendation Backend
+# Compatible with Python 3.11 on Windows, Linux, and macOS
+# ==============================================================================
+
+# Web Framework & CORS
+Flask>=3.0.0
+Flask-Cors>=4.0.0
+Werkzeug>=3.0.0
+
+# Deep Learning / Computer Vision
+tensorflow>=2.15.0
+opencv-python>=4.8.0
+numpy>=1.24.3
+pandas>=2.0.0
+matplotlib>=3.7.0
+scikit-learn>=1.3.0
+Pillow>=10.0.0
+
+# HTTP Requests & APIs
+requests>=2.31.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Optional prediction history persistence
+pymongo>=4.6.0
